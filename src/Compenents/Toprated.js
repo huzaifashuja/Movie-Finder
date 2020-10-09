@@ -64,7 +64,7 @@ export default function Toprated() {
     
       const searchMovies= async()=> {
           
-          const url=`https://api.themoviedb.org/3/movie/top_rated?api_key=e868b5f94ec6ea6a6788d0f9a0e9d05f&language=en-US&page=${page}`;
+          const url=`https://api.themoviedb.org/3/movie/top_rated?api_key=<apikey>&language=en-US&page=${page}`;
           let response = await fetch(url);
           const data = await response.json();
           //console.log(data.results);
