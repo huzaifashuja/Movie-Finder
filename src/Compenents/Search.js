@@ -89,7 +89,7 @@ export default function Header() {
       
         quer();
         e.preventDefault();
-        const url=`https://api.themoviedb.org/3/search/movie?api_key=e868b5f94ec6ea6a6788d0f9a0e9d05f&language=en-US&query=${query}&include_adult=false`;
+        const url=`https://api.themoviedb.org/3/search/movie?api_key=<apikey>&language=en-US&query=${query}&include_adult=false`;
         let response = await fetch(url);
         const data = await response.json();
         //console.log(data.results);
@@ -101,7 +101,7 @@ export default function Header() {
     
       const latestMovies= async()=> {
           
-          const url=`https://api.themoviedb.org/3/movie/now_playing?api_key=e868b5f94ec6ea6a6788d0f9a0e9d05f&language=en-US&page=1`;
+          const url=`https://api.themoviedb.org/3/movie/now_playing?api_key=<apikey>&language=en-US&page=1`;
           let response = await fetch(url);
           const data = await response.json();
           //console.log(data.results);
