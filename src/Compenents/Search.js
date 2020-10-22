@@ -116,7 +116,7 @@ export default function Header() {
          
          <div>  
            <center>
-        <form onSubmit={searchMovies}>
+        <form onSubmit={()=>searchMovies}>
         
           <Card className={classes.card} style={{backgroundColor:'#212121'}}>
             <CardContent>
